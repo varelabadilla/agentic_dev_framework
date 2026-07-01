@@ -155,6 +155,16 @@ Read the relevant file before working on that area.
 
 ## Development Workflow — Slash Commands
 
+### Initialization (run once)
+```
+/init-project          → set up project structure and files
+/define                → conversational definition session across 8 blocks
+/define-adjust         → refine the definition draft
+/define-approve        → lock the draft for generation
+/define-generate       → generate all docs/ files, update CLAUDE.md and README.md
+```
+
+### Phase cycle (repeat per phase)
 ```
 /plan phase-N          → generate implementation plan, records session start
 /adjust {text or path} → refine the plan
@@ -164,7 +174,7 @@ Read the relevant file before working on that area.
 /clean-up              → clear .runbook/, records session end
 ```
 
-Utility commands:
+### Utility commands
 ```
 /proposal {idea}                          → create a structured proposal
 /proposal-to-phase {path}                 → convert proposal to phase draft

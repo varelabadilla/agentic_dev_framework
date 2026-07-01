@@ -42,6 +42,20 @@ Used before a phase exists — for evaluating new ideas:
 
 ---
 
+## Definition Cycle Commands
+
+Used once, between `/init-project` and the first `/plan`. Guides the user through
+a structured requirements elicitation session and generates all project documentation.
+
+| Command | When to use | What it does |
+|---|---|---|
+| `/define` | After `/init-project` | Conversational session — asks strategic questions across 8 blocks, generates `.claude/tmp/project-definition-draft.md` |
+| `/define-adjust {text or path}` | After reviewing the draft | Refines the definition draft — accepts inline text or path to a file |
+| `/define-approve` | When the draft is correct | Validates and locks the draft for documentation generation |
+| `/define-generate` | After approval | Generates all `docs/` files, updates `CLAUDE.md` and `README.md` |
+
+---
+
 ## Structure Command
 
 | Command | When to use | What it does |

@@ -166,6 +166,64 @@ Before an idea becomes a phase, it goes through a proposal step. This keeps the 
 
 ---
 
+## Starting a New Project — The Full Initialization Flow
+
+```
+Fork agentic_dev_framework
+        ↓
+/init-project
+  → asks: name, description, stack, port, author
+  → creates .claude/, docs/, .runbook/ structure
+  → copies rules/, commands/, agents/ to .claude/
+  → personalizes CLAUDE.md and README.md
+  → removes bootstrap/
+        ↓
+/define
+  → conversational session across 8 thematic blocks
+  → asks strategic questions, insists on clarity, marks gaps as [PENDING]
+  → generates .claude/tmp/project-definition-draft.md
+        ↓
+/define-adjust (optional, repeat as needed)
+  → refines the draft inline or via a file
+        ↓
+/define-approve
+  → validates all 8 blocks for completeness and consistency
+  → warns about unresolved [PENDING] items (does not block)
+  → locks the draft for generation
+        ↓
+/define-generate
+  → generates all docs/ files with real content
+  → updates CLAUDE.md and README.md
+  → stages everything with git add
+        ↓
+  [Optional — enrich with Claude.ai]
+  Upload docs/ files to your Claude.ai project
+  Discuss and refine in conversation
+  Download updated files and replace in repo
+        ↓
+/plan phase-1
+  → first development cycle begins
+```
+
+### The 8 Definition Blocks
+
+`/define` works through these blocks in order, applying a four-dimension
+completeness check (Correctness, Completeness, Consistency, Validity)
+after each one:
+
+| Block | Purpose |
+|---|---|
+| 1 — Product Identity | Name, summary, problem statement, explicit boundaries |
+| 2 — Actors and Users | Who uses the system and what they need from it |
+| 3 — Core Entities | Data objects, attributes, relationships, deletion strategy |
+| 4 — Key Flows | How actors interact with entities — happy path and error cases |
+| 5 — Technical Stack | Language, framework, database, ORM, auth, non-negotiable choices |
+| 6 — Restrictions and Risks | Legal, security, hosting, performance, integrations, known risks |
+| 7 — What This Product Is NOT | Explicit out-of-scope boundaries and delegations to other systems |
+| 8 — Initial Phases | MoSCoW prioritization — must have, should have, could have, deferred |
+
+---
+
 ## Repository Structure
 
 After initialization, a project using this framework has:
@@ -230,6 +288,10 @@ After initialization, a project using this framework has:
 | `/plan-discard` | Discard the current plan and start over |
 | `/time-report` | View accumulated time across all sessions |
 | `/update-structure` | Scan the repo and write/overwrite `STRUCTURE.md` at the root |
+| `/define` | Conversational definition session — generates definition draft |
+| `/define-adjust` | Refine the definition draft before approving |
+| `/define-approve` | Validate and lock the definition draft |
+| `/define-generate` | Generate all `docs/` files from the approved draft |
 | `/proposal` | Explore a new idea before it becomes a phase |
 | `/proposal-to-phase` | Convert a validated proposal into a phase |
 | `/proposal-approve` | Write the approved phase files |

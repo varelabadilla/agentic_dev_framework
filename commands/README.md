@@ -56,11 +56,12 @@ a structured requirements elicitation session and generates all project document
 
 ---
 
-## Structure Command
+## Structure and API Commands
 
 | Command | When to use | What it does |
 |---|---|---|
 | `/update-structure` | After init, after any phase that changes files | Scans the repo and writes/overwrites `STRUCTURE.md` at the root |
+| `/generate-postman` | After `/define-generate` and after each phase that adds or changes endpoints | Generates or updates `postman/{PROJECT_NAME}.postman_collection.json` |
 
 ---
 

@@ -35,6 +35,35 @@
 
 ---
 
+## Repository Structure
+
+All Node.js + TypeScript projects using this framework follow this standard layout:
+
+```
+{project-root}/
+├── src/                → all application source code
+│   ├── {module}/       → one folder per domain module
+│   └── main.ts
+├── prisma/             → Prisma schema, migrations, seed (root — ecosystem convention)
+├── test/               → e2e tests (root — NestJS convention)
+├── postman/            → Postman collection files (if the project exposes an API)
+├── docs/               → project documentation
+├── .claude/            → framework rules, commands, agents
+├── .env.example        → environment variable template
+├── CLAUDE.md           → Claude Code instructions
+├── README.md           → human-readable project overview
+└── STRUCTURE.md        → auto-generated file tree (via /update-structure)
+```
+
+**Rules:**
+- All source code lives under `src/` — never at the project root
+- `prisma/` stays at the root — moving it inside `src/` breaks Prisma CLI defaults
+- `test/` stays at the root — NestJS e2e test configuration expects this location
+- Unit tests (`*.spec.ts`) live alongside their source files inside `src/`
+- Never create source files directly at the project root
+
+---
+
 ## API Design
 
 - When a feature requires a different query shape than an existing endpoint, **create a new endpoint** rather than modifying the existing one — backward compatibility must be preserved

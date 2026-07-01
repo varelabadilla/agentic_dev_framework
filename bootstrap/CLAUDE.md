@@ -182,6 +182,7 @@ Read the relevant file before working on that area.
 /plan-discard                             → discard the current plan
 /time-report                              → show time tracking summary
 /update-structure                         → scan repo and write STRUCTURE.md
+/generate-postman                         → generate or update Postman collection
 ```
 
 All commands communicate via `.runbook/` (gitignored). `activity.log` is permanent and never deleted.

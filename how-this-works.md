@@ -288,6 +288,7 @@ After initialization, a project using this framework has:
 | `/plan-discard` | Discard the current plan and start over |
 | `/time-report` | View accumulated time across all sessions |
 | `/update-structure` | Scan the repo and write/overwrite `STRUCTURE.md` at the root |
+| `/generate-postman` | Generate or update the Postman collection from current endpoints |
 | `/define` | Conversational definition session — generates definition draft |
 | `/define-adjust` | Refine the definition draft before approving |
 | `/define-approve` | Validate and lock the definition draft |

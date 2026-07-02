@@ -16,7 +16,7 @@ It defines:
 - The role of the planning instance vs. Claude Code
 - Working mode — when to generate proposals, when to generate prompts, when to ask first
 - Prompt quality rules — what every Claude Code prompt must include
-- Decision logging — how to capture session decisions in `decision_ai_log.md`
+- Decision logging — how to capture session decisions in `decision-ai-log.md`
 - Approval gate — always wait for explicit developer confirmation
 
 ---
@@ -29,7 +29,7 @@ To configure the planning instance for a new project, upload these files to the 
 |---|---|
 | `project-setup-template.md` (completed) | `bootstrap/` → complete all placeholders first |
 | `claude-planner-rules.md` | This folder |
-| `decision_ai_log.md` | Project root (after init, keep updated) |
+| `decision-ai-log.md` | Project root (after init, keep updated) |
 | `information_architecture.md` | `docs/` |
 | `product_definition.md` | `docs/` |
 | `technical_decisions.md` | `docs/` |

@@ -49,7 +49,7 @@ Run this once after forking the `agentic-dev-framework` repository to set up a n
    | `commands/*.md` (except `init-project.md`) | `.claude/commands/` |
    | `agents/*.md` | `.claude/agents/` |
    | `bootstrap/CLAUDE.md` | `CLAUDE.md` |
-   | `bootstrap/decision_ai_log.md` | `decision_ai_log.md` |
+   | `bootstrap/decision-ai-log.md` | `decision-ai-log.md` |
    | `bootstrap/phase-template.md` | `docs/phases/phase-template.md` |
    | `bootstrap/project-setup-template.md` | `project-setup-template.md` |
    | `bootstrap/project-security-standards.md` | `.claude/rules/project-security-standards.md` |
@@ -112,7 +112,7 @@ Run this once after forking the `agentic-dev-framework` repository to set up a n
     - `.claude/agents/` — specialized review agents
     - `docs/phases/`, `docs/proposals/`, `docs/diagrams/` — documentation structure
     - `CLAUDE.md` — personalized for {PROJECT_NAME}
-    - `decision_ai_log.md` — ready to use
+    - `decision-ai-log.md` — ready to use
     - `activity.log` — time tracking initialized
 
     ## Next steps

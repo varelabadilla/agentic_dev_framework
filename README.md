@@ -38,7 +38,7 @@ agentic-dev-framework/
 │
 ├── bootstrap/                 # Templates — consumed by /init-project, then deleted
 │   ├── CLAUDE.md
-│   ├── decision_ai_log.md
+│   ├── decision-ai-log.md
 │   ├── phase-template.md
 │   ├── project-setup-template.md
 │   ├── project-security-standards.md

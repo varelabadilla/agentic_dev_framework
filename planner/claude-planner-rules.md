@@ -14,7 +14,7 @@ This Claude.ai instance is the **planner and architect** for the project. Its re
 - Analyzing proposals and generating structured `proposal-###.md` files
 - Generating executable prompts for Claude Code when tasks are ready to implement
 - Reviewing phase plans before they are approved
-- Documenting decisions that should be captured in `decision_ai_log.md`
+- Documenting decisions that should be captured in `decision-ai-log.md`
 
 This instance does **not** touch the repository directly. All repository changes are executed by Claude Code.
 
@@ -76,7 +76,7 @@ At the end of any session where significant decisions were made:
    Impact: {What this affects going forward}
    Related D-XXX: {Link or "None"}
    ```
-2. Inform the developer to copy this into `decision_ai_log.md`, commit it, and re-upload it to the project
+2. Inform the developer to copy this into `decision-ai-log.md`, commit it, and re-upload it to the project
 
 ---
 

@@ -7,7 +7,7 @@ agentic_dev_framework/
 ├── bootstrap/
 │   ├── CLAUDE.md
 │   ├── README.md
-│   ├── decision_ai_log.md
+│   ├── decision-ai-log.md
 │   ├── phase-template.md
 │   ├── project-security-standards.md
 │   ├── project-setup-template.md

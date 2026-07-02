@@ -43,12 +43,12 @@ What both instances always know. Lives in the repository and in the Claude.ai pr
 - `docs/product_definition.md` — what the product is and is not
 - `docs/user_flows.md` — key flows for users and systems
 - `docs/dev_status.md` — current phase, known issues, completion status
-- `decision_ai_log.md` — planning decisions from Claude.ai sessions
+- `decision-ai-log.md` — planning decisions from Claude.ai sessions
 
 **Claude.ai project files (the planner reads these):**
 - `project-setup-template.md` (configured and uploaded) — product context, architecture rules, workflow
 - `claude-planner-rules.md` — how this instance operates
-- `decision_ai_log.md` — uploaded by the developer after planning sessions
+- `decision-ai-log.md` — uploaded by the developer after planning sessions
 - All key `docs/` files — uploaded to project knowledge
 
 ### Layer 2 — Role Separation
@@ -232,7 +232,7 @@ After initialization, a project using this framework has:
 {project}/
 ├── CLAUDE.md                          # Project-specific instructions for Claude Code
 ├── README.md                          # Human-readable project overview
-├── decision_ai_log.md                 # Planning session decisions
+├── decision-ai-log.md                 # Planning session decisions
 ├── activity.log                       # Permanent session and phase history
 │
 ├── docs/
@@ -312,7 +312,7 @@ Invoke from Claude Code: "Run the architect agent to review my changes"
 | File | Purpose |
 |---|---|
 | `CLAUDE.md` | Template for the project's CLAUDE.md |
-| `decision_ai_log.md` | Empty template ready to use |
+| `decision-ai-log.md` | Empty template ready to use |
 | `phase-template.md` | Structure for new phase files |
 | `project-setup-template.md` | Template for the Claude.ai Project Setup |
 | `project-security-standards.md` | Template for project-specific security rules |
@@ -338,7 +338,7 @@ Every significant architectural or technical decision gets a D-XXX entry in `doc
 
 Entries are always appended. Never renumber or insert between existing entries.
 
-Planning-level decisions (made in Claude.ai before a D-XXX exists) go in `decision_ai_log.md`.
+Planning-level decisions (made in Claude.ai before a D-XXX exists) go in `decision-ai-log.md`.
 
 ---
 

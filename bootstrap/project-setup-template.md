@@ -112,4 +112,4 @@ Key project documents (in project knowledge):
 - `technical_decisions.md` — stack decisions and rationale
 - `user_flows.md` — key user and system flows
 - `CLAUDE.md` — instructions for Claude Code
-- `decision_ai_log.md` — planning session decisions and rationale
+- `decision-ai-log.md` — planning session decisions and rationale

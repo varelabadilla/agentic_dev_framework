@@ -11,7 +11,7 @@ Template files consumed by `/init-project` when setting up a new project from th
 | File | Destination after init | Purpose |
 |---|---|---|
 | `CLAUDE.md` | `{project root}/CLAUDE.md` | Base template for project-specific Claude Code instructions |
-| `decision_ai_log.md` | `{project root}/decision_ai_log.md` | Empty log for planning session decisions |
+| `decision-ai-log.md` | `{project root}/decision-ai-log.md` | Empty log for planning session decisions |
 | `phase-template.md` | `docs/phases/phase-template.md` | Structure reference for new phase files |
 | `project-setup-template.md` | `{project root}/project-setup-template.md` | Template for the Claude.ai Project Setup — configure and upload |
 | `project-security-standards.md` | `.claude/rules/project-security-standards.md` | Project-specific security rules (extends `dev-security-standards.md`) |

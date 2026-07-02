@@ -48,7 +48,7 @@ What both instances always know. Lives in the repository and in the Claude.ai pr
 - `docs/decision-ai-log.md` — planning decisions from Claude.ai sessions
 
 **Claude.ai project files (the planner reads these):**
-- `project-setup-template.md` (configured and uploaded) — product context, architecture rules, workflow
+- `docs/planner/project-setup.md` (configured and uploaded) — product context, architecture rules, workflow
 - `claude-planner-rules.md` — how this instance operates
 - `decision-ai-log.md` — uploaded by the developer after planning sessions
 - All key `docs/` files — uploaded to project knowledge

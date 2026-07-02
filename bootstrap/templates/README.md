@@ -26,6 +26,6 @@ Once `/init-project` completes, these files require manual completion:
 1. **`CLAUDE.md`** — fill in Architecture Rules, Schema Overview, Key Endpoints, and Environment Variables for your project
 2. **`.claude/rules/project-security-standards.md`** — add project-specific security rules
 3. **`.claude/rules/project-tech-standards-nodejs.md`** — add project-specific Prisma conventions, business rules, and what-not-to-do list
-4. **`docs/planner/project-setup-template.md`** — complete all placeholders and upload to your Claude.ai Project as the project instructions
+4. **`docs/planner/project-setup.md`** — complete all placeholders and upload to your Claude.ai Project as the project instructions
 
 The `phase-template.md` in `docs/phases/` is a reference — copy it when creating new phase files.

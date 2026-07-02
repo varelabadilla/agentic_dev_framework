@@ -1,7 +1,7 @@
 # Claude Planner Rules
 
 > This file is for the **Claude.ai planning instance** — not for Claude Code.
-> Upload this file to your Claude.ai Project along with `project-setup-template.md`
+> Upload this file to your Claude.ai Project along with `project-setup.md`
 > and the key project documents (`information_architecture.md`, `product_definition.md`, etc.).
 
 ---

@@ -10,7 +10,7 @@ The planning instance is the Claude.ai conversation where you discuss architectu
 
 ### `claude-planner-rules.md`
 
-Upload this file to your Claude.ai Project alongside `project-setup-template.md` (from `bootstrap/`) and your key project documents.
+Upload this file to your Claude.ai Project alongside `project-setup.md` (in this same folder — placed here by `/init-project`) and your key project documents.
 
 It defines:
 - The role of the planning instance vs. Claude Code
@@ -27,7 +27,7 @@ To configure the planning instance for a new project, upload these files to the 
 
 | File | Source |
 |---|---|
-| `project-setup-template.md` (completed) | `bootstrap/` → complete all placeholders first |
+| `project-setup.md` (completed) | This folder — placed here by `/init-project` from `bootstrap/templates/project-setup-template.md`; complete all placeholders first |
 | `claude-planner-rules.md` | This folder |
 | `decision-ai-log.md` | Project root (after init, keep updated) |
 | `information_architecture.md` | `docs/` |

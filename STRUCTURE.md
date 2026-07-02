@@ -42,17 +42,19 @@ agentic_dev_framework/
 │   │   ├── orm-conventions-prisma.md
 │   │   ├── phase-workflow.md
 │   │   └── working-mode.md
-│   ├── CLAUDE.md
-│   ├── README.md
-│   ├── decision-ai-log.md
-│   ├── phase-template.md
-│   ├── project-security-standards.md
-│   ├── project-setup-template.md
-│   └── project-tech-standards-nodejs.md
+│   ├── templates/
+│   │   ├── CLAUDE-template.md
+│   │   ├── decision-ai-log-template.md
+│   │   ├── phase-template.md
+│   │   ├── project-security-standards-template.md
+│   │   ├── project-setup-template.md
+│   │   └── project-tech-standards-nodejs-template.md
+│   └── README.md
 ├── docs/
-│   └── planner/
-│       ├── README.md
-│       └── claude-planner-rules.md
+│   ├── planner/
+│   │   ├── README.md
+│   │   └── claude-planner-rules.md
+│   └── .gitkeep
 ├── .gitignore
 ├── .markdownlint.json
 ├── LICENSE

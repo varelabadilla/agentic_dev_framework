@@ -33,25 +33,26 @@ agentic-dev-framework/
 ├── README.md                  # This file
 ├── how-this-works.md          # Full methodology explanation
 │
-├── planner/
-│   └── claude-planner-rules.md    # Upload to Claude.ai project
+├── .claude/
+│   ├── commands/
+│   │   ├── init-project.md        # Bootstraps a new project — self-deletes after running
+│   │   └── update-structure.md    # Regenerates STRUCTURE.md — stays after init
+│   ├── rules/                     # Empty until /init-project populates it
+│   └── agents/                    # Empty until /init-project populates it
 │
-├── bootstrap/                 # Templates — consumed by /init-project, then deleted
-│   ├── CLAUDE.md
-│   ├── decision-ai-log.md
-│   ├── phase-template.md
-│   ├── project-setup-template.md
-│   ├── project-security-standards.md
-│   └── project-tech-standards-nodejs.md
+├── docs/
+│   └── planner/
+│       └── claude-planner-rules.md    # Upload to Claude.ai project
 │
-├── rules/                     # Portable rule files for Claude Code
-│   └── *.md
-│
-├── commands/                  # Slash commands for Claude Code
-│   └── *.md
-│
-└── agents/                    # Specialized review agents
-    └── *.md
+└── bootstrap/                 # Consumed by /init-project, then deleted
+    ├── rules/                     # Portable rule files → copied to .claude/rules/
+    │   └── *.md
+    ├── commands/                  # Slash commands → copied to .claude/commands/
+    │   └── *.md
+    ├── agents/                    # Specialized review agents → copied to .claude/agents/
+    │   └── *.md
+    └── templates/                 # Project-root templates (CLAUDE.md, decision-ai-log, etc.)
+        └── *.md
 ```
 
 ---

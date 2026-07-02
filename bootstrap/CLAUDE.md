@@ -167,7 +167,7 @@ Read the relevant file before working on that area.
 ### Phase cycle (repeat per phase)
 ```
 /plan phase-N          → generate implementation plan, records session start
-/adjust {text or path} → refine the plan
+/plan-adjust {text or path} → refine the plan
 /approve               → confirm the plan
 /execute phase-N       → implement the approved plan
 /docs phase-N          → update project documentation

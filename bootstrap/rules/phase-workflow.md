@@ -8,7 +8,7 @@
 ## The Cycle
 
 ```
-/plan → /adjust → /approve → /execute → /docs → /clean-up
+/plan → /plan-adjust → /approve → /execute → /docs → /clean-up
 ```
 
 Optional, before the cycle:

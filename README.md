@@ -10,7 +10,7 @@ Extracted from real project experience. Not a theory — a working method.
 
 A framework that brings structure to AI-assisted development by separating two things that most developers conflate:
 
-- **Planning** (Claude.ai) — architecture, proposals, decisions, prompt generation
+- **Planning** (Claude.ai or Claude Code) — architecture, proposals, decisions, prompt generation
 - **Execution** (Claude Code) — reading the repo, implementing, testing, staging
 
 Everything moves through a repeatable phase cycle with explicit approval gates. Nothing gets implemented without a plan. Nothing gets merged without documentation.
@@ -59,7 +59,7 @@ agentic-dev-framework/
 ## The Phase Cycle
 
 ```
-/plan → /adjust → /approve → /execute → /docs → /clean-up
+/plan → /plan-adjust → /approve → /execute → /docs → /clean-up
 ```
 
 For new ideas before they are planned:
@@ -78,4 +78,4 @@ See [`how-this-works.md`](how-this-works.md) for the full methodology, file refe
 
 ## Origin
 
-Extracted from the development of **NestAuth** — a standalone multi-tenant RS256 JWT authentication server built with NestJS, TypeScript, Prisma, and PostgreSQL. The conventions and workflow documented here emerged from that project and were formalized into this reusable framework.
+Extracted from the development of a standalone server built with NestJS, TypeScript, Prisma, and PostgreSQL. The conventions and workflow documented here emerged from that project and were formalized into this reusable framework.

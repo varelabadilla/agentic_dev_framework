@@ -32,7 +32,8 @@ Run this once after forking the `agentic-dev-framework` repository to set up a n
    docs/
    ├── phases/
    ├── proposals/
-   └── diagrams/
+   ├── diagrams/
+   └── planner/
    .claude/
    ├── rules/
    ├── commands/
@@ -51,7 +52,7 @@ Run this once after forking the `agentic-dev-framework` repository to set up a n
    | `bootstrap/templates/CLAUDE-template.md` | `CLAUDE.md` |
    | `bootstrap/templates/decision-ai-log-template.md` | `decision-ai-log.md` |
    | `bootstrap/templates/phase-template.md` | `docs/phases/phase-template.md` |
-   | `bootstrap/templates/project-setup-template.md` | `project-setup-template.md` |
+   | `bootstrap/templates/project-setup-template.md` | `docs/planner/project-setup.md` |
    | `bootstrap/templates/project-security-standards-template.md` | `.claude/rules/project-security-standards.md` |
    | `bootstrap/templates/project-tech-standards-nodejs-template.md` | `.claude/rules/project-tech-standards-nodejs.md` |
 
@@ -127,7 +128,7 @@ Run this once after forking the `agentic-dev-framework` repository to set up a n
     1. Complete `CLAUDE.md` — fill in Architecture Rules, Schema, Endpoints, and Environment Variables for this project
     2. Complete `.claude/rules/project-security-standards.md` — add project-specific security rules
     3. Complete `.claude/rules/project-tech-standards-nodejs.md` — add project-specific tech conventions
-    4. Open `project-setup-template.md` — use it to configure your Claude.ai Project Setup
+    4. Open `docs/planner/project-setup.md` — use it to configure your Claude.ai Project Setup
     5. Create `docs/development_plan.md` with your initial phase list
     6. Commit: `chore: initialize project from agentic-dev-framework`
 
@@ -136,4 +137,4 @@ Run this once after forking the `agentic-dev-framework` repository to set up a n
     - CLAUDE.md (Architecture Rules, Schema, Endpoints, Environment Variables)
     - .claude/rules/project-security-standards.md
     - .claude/rules/project-tech-standards-nodejs.md
-    - project-setup-template.md → configure and upload to Claude.ai project"
+    - docs/planner/project-setup.md → configure and upload to Claude.ai project"

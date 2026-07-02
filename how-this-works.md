@@ -176,7 +176,7 @@ Fork agentic_dev_framework
 /init-project
   → asks: name, description, stack, port, author
   → creates .claude/, docs/, .runbook/ structure
-  → copies rules/, commands/, agents/ to .claude/
+  → copies bootstrap/rules/, bootstrap/commands/, bootstrap/agents/ to .claude/
   → personalizes CLAUDE.md and README.md
   → removes bootstrap/
         ↓

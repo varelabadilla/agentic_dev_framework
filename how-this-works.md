@@ -1,7 +1,7 @@
 # How This Works — agentic-dev-framework
 
 > A structured methodology for solo developers building software with Claude Code and Claude.ai.
-> Extracted from real project experience building NestAuth — a multi-tenant authentication server.
+> Extracted from real project experience building an authentication server.
 
 ---
 
@@ -15,6 +15,8 @@ Most AI-assisted development fails at scale because it is unstructured: ad-hoc p
 |---|---|---|
 | Claude.ai | Planner / Architect | Discusses, decides, generates prompts |
 | Claude Code | Executor | Reads the repo, implements, tests, stages |
+
+Note: It is user's decision whether to also use Claude Code as a Planner / Architect.
 
 **One repeatable cycle:**
 
@@ -43,7 +45,7 @@ What both instances always know. Lives in the repository and in the Claude.ai pr
 - `docs/product_definition.md` — what the product is and is not
 - `docs/user_flows.md` — key flows for users and systems
 - `docs/dev_status.md` — current phase, known issues, completion status
-- `decision-ai-log.md` — planning decisions from Claude.ai sessions
+- `docs/decision-ai-log.md` — planning decisions from Claude.ai sessions
 
 **Claude.ai project files (the planner reads these):**
 - `project-setup-template.md` (configured and uploaded) — product context, architecture rules, workflow
@@ -307,16 +309,16 @@ After initialization, a project using this framework has:
 
 Invoke from Claude Code: "Run the architect agent to review my changes"
 
-### Bootstrap (`bootstrap/` — exists only in the framework repo)
+### Bootstrap templates (`bootstrap/templates/` — exists only in the framework repo)
 
 | File | Purpose |
 |---|---|
-| `CLAUDE.md` | Template for the project's CLAUDE.md |
-| `decision-ai-log.md` | Empty template ready to use |
+| `CLAUDE-template.md` | Template for the project's CLAUDE.md |
+| `decision-ai-log-template.md` | Empty template ready to use |
 | `phase-template.md` | Structure for new phase files |
 | `project-setup-template.md` | Template for the Claude.ai Project Setup |
-| `project-security-standards.md` | Template for project-specific security rules |
-| `project-tech-standards-nodejs.md` | Template for project-specific tech conventions |
+| `project-security-standards-template.md` | Template for project-specific security rules |
+| `project-tech-standards-nodejs-template.md` | Template for project-specific tech conventions |
 
 ---
 

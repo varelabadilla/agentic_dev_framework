@@ -168,7 +168,7 @@ Read the relevant file before working on that area.
 ```
 /plan phase-N          → generate implementation plan, records session start
 /plan-adjust {text or path} → refine the plan
-/approve               → confirm the plan
+/plan-approve               → confirm the plan
 /execute phase-N       → implement the approved plan
 /docs phase-N          → update project documentation
 /plan-clean-up              → clear .runbook/, records session end

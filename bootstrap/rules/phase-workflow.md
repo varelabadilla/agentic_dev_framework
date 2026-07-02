@@ -8,7 +8,7 @@
 ## The Cycle
 
 ```
-/plan → /plan-adjust → /approve → /execute → /docs → /plan-clean-up
+/plan → /plan-adjust → /plan-approve → /execute → /docs → /plan-clean-up
 ```
 
 Optional, before the cycle:
@@ -45,7 +45,7 @@ A `- [-]` item must always have a brief note explaining why it was skipped.
 ## Planning Rules
 
 - **Planning and execution are always separate** — `/plan` generates the plan, `/execute` implements it
-- `/approve` confirms the plan — it never triggers execution
+- `/plan-approve` confirms the plan — it never triggers execution
 - `/execute` never runs without an approved `plan.md` in `.runbook/`
 - Test coverage analysis is part of every plan — never deferred to a separate QA phase
 
@@ -112,6 +112,6 @@ If QA cases require conditions unavailable during implementation (live credentia
 ## What NOT to Do
 
 - Never execute implementation steps inside a `/plan` command
-- Never start `/execute` without a `plan.md` approved via `/approve`
+- Never start `/execute` without a `plan.md` approved via `/plan-approve`
 - Never defer test coverage to a phase after implementation
 - Never mark a phase complete without updating all documentation files

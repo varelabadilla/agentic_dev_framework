@@ -85,7 +85,7 @@ When the user describes something to implement, fix, or explore:
 
 The command cycle is:
 ```
-/plan → /plan-adjust → /approve → /execute → /docs → /plan-clean-up
+/plan → /plan-adjust → /plan-approve → /execute → /docs → /plan-clean-up
 ```
 
 For new ideas before they are planned:

@@ -11,7 +11,7 @@ Where N matches the phase number planned with `/plan phase-N`.
 1. Parse `$ARGUMENTS` to extract the phase number.
 
 2. Check that `.runbook/plan.md` exists. If it does not, inform the user:
-   "No approved plan found. Run /plan phase-N first, then /approve."
+   "No approved plan found. Run /plan phase-N first, then /plan-approve."
    Stop.
 
 3. Read `.runbook/plan.md` in full.

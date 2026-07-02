@@ -2,7 +2,7 @@
 
 Slash commands for Claude Code. Copy the entire `commands/` folder to `.claude/commands/` in any new project.
 
-Commands are invoked directly in Claude Code: `/plan phase-5`, `/approve`, etc.
+Commands are invoked directly in Claude Code: `/plan phase-5`, `/plan-approve`, etc.
 
 ---
 
@@ -14,7 +14,7 @@ These are the core commands used in every phase:
 |---|---|---|
 | `/plan phase-N` | Start of every phase | Reads phase file and docs, generates implementation plan, records session start |
 | `/plan-adjust {text or path}` | After reviewing the plan | Modifies the plan — accepts inline text or a path to a Markdown file |
-| `/approve` | After the plan looks correct | Locks the plan for execution — does NOT implement anything |
+| `/plan-approve` | After the plan looks correct | Locks the plan for execution — does NOT implement anything |
 | `/execute phase-N` | After approval | Implements all steps, runs build and QA, stages files |
 | `/docs phase-N` | After execution is committed | Updates all project documentation files |
 | `/plan-clean-up` | After docs are committed | Clears `.runbook/`, records session end and duration |

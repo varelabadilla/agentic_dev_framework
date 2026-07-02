@@ -44,6 +44,7 @@ agentic_dev_framework/
 │   │   └── working-mode.md
 │   ├── templates/
 │   │   ├── CLAUDE-template.md
+│   │   ├── README.md
 │   │   ├── decision-ai-log-template.md
 │   │   ├── phase-template.md
 │   │   ├── project-security-standards-template.md

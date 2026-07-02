@@ -21,9 +21,9 @@ Optional, before the cycle:
 ## Phase Documents
 
 - Every phase requires a **dedicated plan document** with unchecked task items before any execution begins
-- Phase files live in `docs/phases/phase-NN-N-slug.md`
+- Phase files live in `docs/phases/phase-NN-slug.md`
   - `NN` is zero-padded to two digits
-  - Sub-phases use a hyphen separator: `02-5` for phase 2.5
+  - Sub-phases insert an extra number: `docs/phases/phase-NN-N-slug.md` — e.g. `phase-02-5-user-auth.md` for phase 2.5. Whole-number phases never include this extra segment.
   - The slug is derived from the phase name: lowercase, words separated by hyphens
 - When a new phase is added, create its file in `docs/phases/` and add a row to `docs/development_plan.md`
 - Never add task detail directly to `development_plan.md` — it is an index only
@@ -104,8 +104,8 @@ Every phase file must follow this structure:
 If QA cases require conditions unavailable during implementation (live credentials, external services):
 
 - The phase status remains `✅ Complete`
-- A new sub-phase file is created: `docs/phases/phase-NN-N-slug-qa.md`
-- The sub-phase file cross-references the original phase and writes results back into it upon completion
+- A new file is created by appending `-qa` to the original phase file's name: `docs/phases/phase-NN-slug-qa.md` (or `phase-NN-N-slug-qa.md` if the original phase was itself a sub-phase)
+- The QA file cross-references the original phase and writes results back into it upon completion
 
 ---
 

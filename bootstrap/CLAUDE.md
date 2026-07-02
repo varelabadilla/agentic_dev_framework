@@ -171,7 +171,7 @@ Read the relevant file before working on that area.
 /approve               → confirm the plan
 /execute phase-N       → implement the approved plan
 /docs phase-N          → update project documentation
-/clean-up              → clear .runbook/, records session end
+/plan-clean-up              → clear .runbook/, records session end
 ```
 
 ### Utility commands

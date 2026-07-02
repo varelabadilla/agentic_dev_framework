@@ -19,7 +19,7 @@ Most AI-assisted development fails at scale because it is unstructured: ad-hoc p
 **One repeatable cycle:**
 
 ```
-/plan → /plan-adjust → /approve → /execute → /docs → /clean-up
+/plan → /plan-adjust → /approve → /execute → /docs → /plan-clean-up
 ```
 
 Nothing gets implemented without a plan. Nothing gets merged without documentation. Everything is explicit and approved by the developer.
@@ -98,7 +98,7 @@ Every feature, fix, or capability is delivered through a phase. A phase is a uni
   → updates dev_status.md, development_plan.md, decision_log.md, technical_decisions.md
   → never touches source code
 
-/clean-up
+/plan-clean-up
   → confirms deletion of .runbook/ contents (except activity.log)
   → records session end and duration in activity.log
   → leaves the project in a clean state for the next phase
@@ -284,7 +284,7 @@ After initialization, a project using this framework has:
 | `/approve` | After reviewing the plan — locks it for execution |
 | `/execute phase-N` | After approval — implements the plan |
 | `/docs phase-N` | After execution — updates all documentation |
-| `/clean-up` | After docs are committed — closes the session |
+| `/plan-clean-up` | After docs are committed — closes the session |
 | `/plan-discard` | Discard the current plan and start over |
 | `/time-report` | View accumulated time across all sessions |
 | `/update-structure` | Scan the repo and write/overwrite `STRUCTURE.md` at the root |
@@ -347,7 +347,7 @@ Planning-level decisions (made in Claude.ai before a D-XXX exists) go in `decisi
 Every session is tracked in `activity.log`:
 
 - `/plan phase-N` records session start
-- `/clean-up` records session end and duration
+- `/plan-clean-up` records session end and duration
 - `/time-report` shows total time across all sessions
 
 `activity.log` is permanent — it is never deleted by any command.

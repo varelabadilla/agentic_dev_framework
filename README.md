@@ -59,7 +59,7 @@ agentic-dev-framework/
 ## The Phase Cycle
 
 ```
-/plan → /plan-adjust → /approve → /execute → /docs → /clean-up
+/plan → /plan-adjust → /approve → /execute → /docs → /plan-clean-up
 ```
 
 For new ideas before they are planned:

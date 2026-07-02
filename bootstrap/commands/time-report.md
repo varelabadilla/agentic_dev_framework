@@ -44,5 +44,5 @@ Generates a summary of all work sessions logged in `activity.log`.
    ```
 
 6. Note at the bottom:
-   "This report reflects time logged via /plan (session start) and /clean-up (session end) only.
+   "This report reflects time logged via /plan (session start) and /plan-clean-up (session end) only.
    Time spent outside of logged sessions is not included."

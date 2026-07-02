@@ -1,8 +1,8 @@
-# /clean-up — Clean Agent State and Close Session
+# /plan-clean-up — Clean Agent State and Close Session
 
 ## Usage
 
-`/clean-up`
+`/plan-clean-up`
 
 Use this command:
 - After completing a phase and committing both implementation and docs
@@ -34,7 +34,7 @@ Use this command:
       `[{timestamp}] SESSION END — Duration: {duration}`
 
    c. Append to `activity.log`:
-      `[{timestamp}] /clean-up: Agent state cleaned. activity.log preserved.`
+      `[{timestamp}] /plan-clean-up: Agent state cleaned. activity.log preserved.`
 
    d. Delete all files inside `.runbook/` **except** `activity.log`.
       Keep the `.runbook/` directory itself (it is gitignored).

@@ -69,4 +69,4 @@
 11. Present the docs commit message to the user:
     "Documentation updated. Commit message:
     `docs: update project docs for phase N completion`
-    Run /clean-up when ready to start Phase N+1."
+    Run /plan-clean-up when ready to start Phase N+1."

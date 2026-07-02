@@ -17,7 +17,7 @@ These are the core commands used in every phase:
 | `/approve` | After the plan looks correct | Locks the plan for execution — does NOT implement anything |
 | `/execute phase-N` | After approval | Implements all steps, runs build and QA, stages files |
 | `/docs phase-N` | After execution is committed | Updates all project documentation files |
-| `/clean-up` | After docs are committed | Clears `.runbook/`, records session end and duration |
+| `/plan-clean-up` | After docs are committed | Clears `.runbook/`, records session end and duration |
 
 ---
 

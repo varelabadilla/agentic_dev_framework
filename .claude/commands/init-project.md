@@ -45,15 +45,15 @@ Run this once after forking the `agentic-dev-framework` repository to set up a n
 
    | Source | Destination |
    |---|---|
-   | `rules/*.md` | `.claude/rules/` |
-   | `commands/*.md` (except `init-project.md`) | `.claude/commands/` |
-   | `agents/*.md` | `.claude/agents/` |
-   | `bootstrap/CLAUDE.md` | `CLAUDE.md` |
-   | `bootstrap/decision-ai-log.md` | `decision-ai-log.md` |
-   | `bootstrap/phase-template.md` | `docs/phases/phase-template.md` |
-   | `bootstrap/project-setup-template.md` | `project-setup-template.md` |
-   | `bootstrap/project-security-standards.md` | `.claude/rules/project-security-standards.md` |
-   | `bootstrap/project-tech-standards-nodejs.md` | `.claude/rules/project-tech-standards-nodejs.md` |
+   | `bootstrap/rules/*.md` | `.claude/rules/` |
+   | `bootstrap/commands/*.md` | `.claude/commands/` |
+   | `bootstrap/agents/*.md` | `.claude/agents/` |
+   | `bootstrap/templates/CLAUDE-template.md` | `CLAUDE.md` |
+   | `bootstrap/templates/decision-ai-log-template.md` | `decision-ai-log.md` |
+   | `bootstrap/templates/phase-template.md` | `docs/phases/phase-template.md` |
+   | `bootstrap/templates/project-setup-template.md` | `project-setup-template.md` |
+   | `bootstrap/templates/project-security-standards-template.md` | `.claude/rules/project-security-standards.md` |
+   | `bootstrap/templates/project-tech-standards-nodejs-template.md` | `.claude/rules/project-tech-standards-nodejs.md` |
 
 5. Personalize `CLAUDE.md` using the answers from step 2:
    - Replace `{PROJECT_NAME}` with the project name
@@ -62,7 +62,7 @@ Run this once after forking the `agentic-dev-framework` repository to set up a n
    - Replace `{PORT}` with the development port
    - Replace `{AUTHOR}` with the author/team name
 
-6. Personalize `README.md` (if it exists) or create a minimal one:
+6. Overwrite `README.md` completely. It currently describes the framework itself (forked as-is into this repository) — replace its entire content with the minimal project README below, discarding everything it had before:
 
    ```markdown
    # {PROJECT_NAME}
@@ -87,21 +87,28 @@ Run this once after forking the `agentic-dev-framework` repository to set up a n
    .claude/tmp/
    ```
 
-8. Delete `bootstrap/` and its contents — it is no longer needed in the project repository.
+8. Confirm deletion before removing anything. Inform the user exactly which files/directories will be permanently deleted:
 
-9. Initialize `activity.log`:
+   - `bootstrap/` and all its contents (templates already copied to their destinations in steps 4-7)
+   - `.claude/commands/init-project.md` (this command — one-time use, not needed after initialization)
+
+   Ask the user to type `yes` to confirm. Do not proceed to step 9 unless the user's reply is exactly `yes`. If the user does not confirm, stop here and leave `bootstrap/` and `.claude/commands/init-project.md` untouched — the user can re-run `/init-project` later to retry.
+
+9. Delete `bootstrap/` and its contents, and delete `.claude/commands/init-project.md` — neither is needed in the project repository after initialization.
+
+10. Initialize `activity.log`:
 
    ```
    [{timestamp}] PROJECT INITIALIZED — {PROJECT_NAME}
    [{timestamp}] Framework: agentic-dev-framework
    ```
 
-10. Stage all created and modified files:
+11. Stage all created and modified files:
     ```bash
     git add .
     ```
 
-11. Inform the user:
+12. Inform the user:
 
     "Project initialized successfully.
 

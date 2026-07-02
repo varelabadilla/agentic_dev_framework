@@ -364,4 +364,4 @@ This framework is designed for a **solo developer**. It can scale to small teams
 
 ## Origin
 
-This framework was extracted from the methodology that emerged organically while building **NestAuth** — a standalone multi-tenant RS256 JWT authentication server. What started as ad-hoc conventions became a repeatable, documented method. This repository formalizes that method so it can be applied to any new project from day one.
+This framework was extracted from the methodology that emerged organically while building a standalone authentication server. What started as ad-hoc conventions became a repeatable, documented method. This repository formalizes that method so it can be applied to any new project from day one.

@@ -1,8 +1,8 @@
-# /execute — Execute the Approved Implementation Plan
+# /plan-execute — Execute the Approved Implementation Plan
 
 ## Usage
 
-`/execute phase-N`
+`/plan-execute phase-N`
 
 Where N matches the phase number planned with `/plan phase-N`.
 
@@ -64,7 +64,7 @@ Where N matches the phase number planned with `/plan phase-N`.
     ```
 
 11. Append to `activity.log`:
-    `[{timestamp}] /execute phase-N: Implementation complete. Build: PASS/FAIL. QA: X/Y passed.`
+    `[{timestamp}] /plan-execute phase-N: Implementation complete. Build: PASS/FAIL. QA: X/Y passed.`
 
 12. Stage all changed files:
     ```bash

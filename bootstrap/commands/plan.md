@@ -80,7 +80,7 @@ Where N is the phase number (e.g. `/plan phase-5`).
 
 11. Present the plan to the user and ask:
     "Does this plan look correct?
-    - Run **/plan-approve** to confirm and then run /execute phase-N
+    - Run **/plan-approve** to confirm and then run /plan-execute phase-N
     - Run **/plan-adjust** to modify before approving
     - Run **/plan-discard** to discard and start over"
 

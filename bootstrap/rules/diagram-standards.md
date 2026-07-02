@@ -106,7 +106,7 @@ Create or update a diagram file whenever:
 - An existing flow changes behavior
 - A decision is made that affects how systems interact (new D-XXX entry)
 
-Diagram files are updated as part of the `/docs phase-N` step, not the `/execute` step.
+Diagram files are updated as part of the `/docs phase-N` step, not the `/plan-execute` step.
 
 ---
 

@@ -57,7 +57,7 @@ Example: `/proposal-to-phase docs/proposals/proposal-001.md`
    Tasks must be:
    - Derived from the proposal's proposed approach
    - Informed by existing code and architecture
-   - Specific enough to be actionable by `/execute`
+   - Specific enough to be actionable by `/plan-execute`
 
 8. Generate the `development_plan.md` row for this phase:
 

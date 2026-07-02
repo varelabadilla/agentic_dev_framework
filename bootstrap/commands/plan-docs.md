@@ -1,8 +1,8 @@
-# /docs — Update Project Documentation After Phase Completion
+# /plan-docs — Update Project Documentation After Phase Completion
 
 ## Usage
 
-`/docs phase-N`
+`/plan-docs phase-N`
 
 ## Process
 
@@ -64,7 +64,7 @@
    ```
 
 10. Append to `activity.log`:
-    `[{timestamp}] /docs phase-N: Documentation updated. Ready for commit.`
+    `[{timestamp}] /plan-docs phase-N: Documentation updated. Ready for commit.`
 
 11. Present the docs commit message to the user:
     "Documentation updated. Commit message:

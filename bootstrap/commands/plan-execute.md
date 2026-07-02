@@ -74,4 +74,4 @@ Where N matches the phase number planned with `/plan phase-N`.
 13. Present the implementation results to the user and provide the commit message from `.runbook/plan.md`:
     "Implementation complete. Commit message:
     `{commit message from plan}`
-    Run /docs phase-N when ready to update project documentation."
+    Run /plan-docs phase-N when ready to update project documentation."

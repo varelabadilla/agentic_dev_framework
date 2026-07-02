@@ -19,7 +19,7 @@ Most AI-assisted development fails at scale because it is unstructured: ad-hoc p
 **One repeatable cycle:**
 
 ```
-/plan → /plan-adjust → /plan-approve → /plan-execute → /docs → /plan-clean-up
+/plan → /plan-adjust → /plan-approve → /plan-execute → /plan-docs → /plan-clean-up
 ```
 
 Nothing gets implemented without a plan. Nothing gets merged without documentation. Everything is explicit and approved by the developer.
@@ -94,7 +94,7 @@ Every feature, fix, or capability is delivered through a phase. A phase is a uni
   → stages files with git add
   → writes .runbook/implementation-results.md
 
-/docs phase-N
+/plan-docs phase-N
   → updates dev_status.md, development_plan.md, decision_log.md, technical_decisions.md
   → never touches source code
 
@@ -283,7 +283,7 @@ After initialization, a project using this framework has:
 | `/plan-adjust` | After reviewing the plan — refine before approving |
 | `/plan-approve` | After reviewing the plan — locks it for execution |
 | `/plan-execute phase-N` | After approval — implements the plan |
-| `/docs phase-N` | After execution — updates all documentation |
+| `/plan-docs phase-N` | After execution — updates all documentation |
 | `/plan-clean-up` | After docs are committed — closes the session |
 | `/plan-discard` | Discard the current plan and start over |
 | `/time-report` | View accumulated time across all sessions |

@@ -170,7 +170,7 @@ Read the relevant file before working on that area.
 /plan-adjust {text or path} → refine the plan
 /plan-approve               → confirm the plan
 /plan-execute phase-N       → implement the approved plan
-/docs phase-N          → update project documentation
+/plan-docs phase-N          → update project documentation
 /plan-clean-up              → clear .runbook/, records session end
 ```
 

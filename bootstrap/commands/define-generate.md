@@ -256,7 +256,7 @@ Structure only — no entries yet.
 
 ---
 
-<!-- First entry will be added by /docs phase-N after Phase 1 completes -->
+<!-- First entry will be added by /plan-docs phase-N after Phase 1 completes -->
 ```
 
 ---
@@ -292,7 +292,7 @@ None.
 
 ---
 
-*Updated by /docs phase-N after each phase completes.*
+*Updated by /plan-docs phase-N after each phase completes.*
 ```
 
 ---

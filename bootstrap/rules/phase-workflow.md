@@ -8,7 +8,7 @@
 ## The Cycle
 
 ```
-/plan → /plan-adjust → /plan-approve → /plan-execute → /docs → /plan-clean-up
+/plan → /plan-adjust → /plan-approve → /plan-execute → /plan-docs → /plan-clean-up
 ```
 
 Optional, before the cycle:
@@ -92,7 +92,7 @@ Every phase file must follow this structure:
 
 1. In the phase file: mark all completed tasks as `[x]`, ignored tasks as `[-]`, append the completion block
 2. In `development_plan.md`: update the Status column to `✅ Complete`
-3. Run `/docs phase-N` to update all project documentation
+3. Run `/plan-docs phase-N` to update all project documentation
 4. Run `/plan-clean-up` to clear `.runbook/` before starting the next phase
 
 **Never mark the next phase as "In Progress"** when completing the current one. The next phase status is updated only when that phase is explicitly started.

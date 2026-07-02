@@ -51,13 +51,13 @@ Reviews code changes for security vulnerabilities.
 
 ## When to Run Agents
 
-Run both agents after `/plan-execute` completes and before running `/docs`:
+Run both agents after `/plan-execute` completes and before running `/plan-docs`:
 
 1. `/plan-execute phase-N` — implementation complete
 2. "Run the architect agent" — review for architecture issues
 3. "Run the security reviewer" — review for security issues
 4. Resolve any BLOCKERs before committing
-5. `/docs phase-N` — update documentation
+5. `/plan-docs phase-N` — update documentation
 
 ---
 

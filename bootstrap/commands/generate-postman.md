@@ -6,7 +6,7 @@
 
 Run this command:
 - After `/define-generate` when starting a new API project
-- After `/docs phase-N` when a phase added, modified, or removed endpoints
+- After `/plan-docs phase-N` when a phase added, modified, or removed endpoints
 
 ## Process
 

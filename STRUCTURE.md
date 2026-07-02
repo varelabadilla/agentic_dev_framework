@@ -1,10 +1,47 @@
-```
 agentic_dev_framework/
-├── agents/
-│   ├── README.md
-│   ├── architect.md
-│   └── security-reviewer.md
+├── .claude/
+│   ├── agents/
+│   │   └── .gitkeep
+│   ├── commands/
+│   │   ├── init-project.md
+│   │   └── update-structure.md
+│   └── rules/
+│       └── .gitkeep
 ├── bootstrap/
+│   ├── agents/
+│   │   ├── README.md
+│   │   ├── architect.md
+│   │   └── security-reviewer.md
+│   ├── commands/
+│   │   ├── README.md
+│   │   ├── define-adjust.md
+│   │   ├── define-approve.md
+│   │   ├── define-generate.md
+│   │   ├── define.md
+│   │   ├── generate-postman.md
+│   │   ├── plan-adjust.md
+│   │   ├── plan-approve.md
+│   │   ├── plan-clean-up.md
+│   │   ├── plan-discard.md
+│   │   ├── plan-docs.md
+│   │   ├── plan-execute.md
+│   │   ├── plan.md
+│   │   ├── proposal-approve.md
+│   │   ├── proposal-to-phase.md
+│   │   ├── proposal.md
+│   │   └── time-report.md
+│   ├── rules/
+│   │   ├── README.md
+│   │   ├── code-standards-nodejs-typescript.md
+│   │   ├── database-conventions-postgresql.md
+│   │   ├── dev-environment.md
+│   │   ├── dev-security-standards.md
+│   │   ├── diagram-standards.md
+│   │   ├── documentation-standards.md
+│   │   ├── git-conventions.md
+│   │   ├── orm-conventions-prisma.md
+│   │   ├── phase-workflow.md
+│   │   └── working-mode.md
 │   ├── CLAUDE.md
 │   ├── README.md
 │   ├── decision-ai-log.md
@@ -12,41 +49,14 @@ agentic_dev_framework/
 │   ├── project-security-standards.md
 │   ├── project-setup-template.md
 │   └── project-tech-standards-nodejs.md
-├── commands/
-│   ├── README.md
-│   ├── adjust.md
-│   ├── approve.md
-│   ├── clean-up.md
-│   ├── docs.md
-│   ├── execute.md
-│   ├── init-project.md
-│   ├── plan-discard.md
-│   ├── plan.md
-│   ├── proposal-approve.md
-│   ├── proposal-to-phase.md
-│   ├── proposal.md
-│   ├── time-report.md
-│   └── update-structure.md
-├── planner/
-│   ├── README.md
-│   └── claude-planner-rules.md
-├── rules/
-│   ├── README.md
-│   ├── code-standards-nodejs-typescript.md
-│   ├── database-conventions-postgresql.md
-│   ├── dev-environment.md
-│   ├── dev-security-standards.md
-│   ├── diagram-standards.md
-│   ├── documentation-standards.md
-│   ├── git-conventions.md
-│   ├── orm-conventions-prisma.md
-│   ├── phase-workflow.md
-│   └── working-mode.md
-├── {rules,commands,agents,bootstrap,planner}/
+├── docs/
+│   └── planner/
+│       ├── README.md
+│       └── claude-planner-rules.md
 ├── .gitignore
 ├── .markdownlint.json
 ├── LICENSE
 ├── README.md
 ├── STRUCTURE.md
+├── activity.log
 └── how-this-works.md
-```
